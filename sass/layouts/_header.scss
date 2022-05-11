@@ -2,13 +2,24 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     &__logo {
         & img {
-            width: 100;
+            width: 150px;
+            height: 45px;
         }
     }
     &__localization {
         font-size: 20px;
-        color: red;
+        background: lightgray;
+    }
+}
+
+
+.headercarte{
+    text-align: center;
+    &__image{
+        width: 100%;
+    object-fit: cover;
     }
 }

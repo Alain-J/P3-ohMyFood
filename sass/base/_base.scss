@@ -1,3 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+body {
+  margin: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: white;
+  &__titre {
+    margin-left: 40px;
+    font-style: italic;
+  }
+  &__bas {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style-type: none;
+    margin-top: 0px;
+    &__icons1 {
+      display: flex;
+      gap: 12px;
+    }
+    &__icons2 {
+      display: flex;
+      gap: 6px;
+    }
+  }
+}
