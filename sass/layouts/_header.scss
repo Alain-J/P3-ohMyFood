@@ -10,10 +10,14 @@
         }
     }
     &__localization {
-        font-size: 20px;
+        font-size: 16px;
         background: lightgray;
+        font-weight: bold;
+        color: $dark-gray;
+        
     }
 }
+
 
 
 .headercarte{

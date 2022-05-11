@@ -1,0 +1,16 @@
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@mixin rounded-btn {
+    border-radius: 30px 30px 30px 30px;
+    height: 51px;
+    width: 45%;
+    border: none;
+    font-size: 10px;
+    color: white;
+    background: linear-gradient(355deg,$primary-color 0%, $secondary-color 80%);
+}
