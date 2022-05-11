@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &__logo {
+        & img {
+            width: 100;
+        }
+    }
+    &__localization {
+        font-size: 20px;
+        color: red;
+    }
+}
