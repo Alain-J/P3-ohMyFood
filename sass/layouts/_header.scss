@@ -1,29 +1,32 @@
 .header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  &__logo {
+    & img {
+      width: 160px;
+      height: 45px;
+    }
+  }
+  &__localization {
+    font-size: 16px;
+    background: $gray;
+    font-weight: bold;
+    color: $dark-gray;
+  }
+  &__texte {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    &__logo {
-        & img {
-            width: 150px;
-            height: 45px;
-        }
-    }
-    &__localization {
-        font-size: 16px;
-        background: lightgray;
-        font-weight: bold;
-        color: $dark-gray;
-        
-    }
+    gap: 1rem;
+    margin-right: 1rem;
+  }
 }
 
-
-
-.headercarte{
-    text-align: center;
-    &__image{
-        width: 100%;
+.headercarte {
+  text-align: center;
+  &__image {
+    width: 100%;
     object-fit: cover;
-    }
+  }
 }

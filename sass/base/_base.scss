@@ -6,13 +6,15 @@ body {
   font-family:"Roboto", sans-serif;
 }
 
-
+h2,h3{
+  font-family: Shrikhand;
+}
 
 .footer {
   display: flex;
   flex-direction: column;
-  background: black;
-  color: white;
+  background: $black;
+  color: $white;
   &__titre {
     margin-left: 40px;
     font-style: italic;
