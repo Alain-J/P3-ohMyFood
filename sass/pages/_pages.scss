@@ -1,76 +1,75 @@
 h2 {
   margin-left: 26px;
-  font-size: 30px
+  font-size: 26px;
 }
 
 .intro {
- @include flex-column;
+  @include flex-column;
   text-align: center;
   background-color: $whitesmoke;
   margin-bottom: 48px;
   padding: 20px;
-  &__decouvrez{
+  gap: 1rem;
+  &__titre{
+    margin: auto;
+  }
+  &__decouvrez {
     margin-top: -4px;
-    font-size: 20px;
+    font-size: 19px;
   }
   &__explorer {
-   @include rounded-btn;
+    @include rounded-btn;
   }
-
 }
 
-
-.fonctionnement{
+.fonctionnement {
   margin-bottom: 4rem;
-.nav {
-  &__item {
-    background-color: $whitesmoke;
-    border-radius: 15px 15px 15px 15px;
-    margin: 18px;
-    margin-left: 36px;
-    box-shadow: 10px 10px 10px $lightgray;
-    margin-right: 30px;
+  .nav__item:hover {
+    background: #f5deff;
   }
-  &__text {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
-    color: $black;
-    height: 60px;
-    font-weight: bold;
+  .nav {
+    &__item {
+      background-color: $whitesmoke;
+      border-radius: 15px 15px 15px 15px;
+      margin: 18px;
+      margin-left: 36px;
+      box-shadow: 10px 10px 10px $lightgray;
+      margin-right: 30px;
+    }
+    &__text {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      color: $black;
+      height: 60px;
+      font-weight: bold;
+    }
+    &__number {
+      background-color: $primary-color;
+      border-radius: 50px;
+      width: 13px;
+      height: 15px;
+      padding: 3px;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: -7px;
+      color: $white;
+    }
+    a {
+      text-decoration: none;
+    }
+    &__texte {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      color: $black;
+      height: 60px;
+      font-weight: bold;
+      border-radius: 15px 15px 15px 15px;
+    }
   }
-  &__number {
-    background-color: $primary-color;
-    border-radius: 50px;
-    width: 13px;
-    height: 15px;
-    padding: 3px;
-    font-size: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: -7px;
-    color: $white;
-  }
-  a {
-    text-decoration: none;
-  }
-  &__texte{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
-    color: $black;
-    height: 60px;
-    font-weight: bold;
-    background-color: #f5deff;
-    border-radius: 15px 15px 15px 15px;
-  }
-  
-}
-}
-
-.h2:hover{
-  background-color: red;
 }

@@ -6,7 +6,7 @@ body {
   font-family:"Roboto", sans-serif;
 }
 
-h1,h2,h3{
+h1.sectioncarte__grostitre{
   font-family: Shrikhand;
 }
 
@@ -33,5 +33,49 @@ h1,h2,h3{
       display: flex;
       gap: 6px;
     }
+  }
+}
+.loadingcontainer{
+  position: fixed;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: $secondary-color;
+  animation: loading-visibility 3s linear both;
+}
+
+@keyframes loading-visibility{
+  from{
+    opacity: 1;
+    visibility: visible ;
+  }
+  to{
+    opacity: 0;
+    visibility: hidden ;
+  }
+}
+
+.loading{
+  margin: auto;
+  border: 20px solid $tertiary-color;
+  border-top: 20px solid $primary-color;
+  width: 200px;
+  height: 200px;
+  animation: spinner 2s linear infinite;
+  border-radius: 50%;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
   }
 }

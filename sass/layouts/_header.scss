@@ -26,7 +26,20 @@
 .headercarte {
   text-align: center;
   &__image {
-    width: 100%;
+    width: 104%;
     object-fit: cover;
+    height: 245px;
+  }
+  &__logo {
+    margin-bottom: 10px;
+  }
+  &__lienfleche {
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    left: 2rem;
+    top: 1.6rem;
+    font-size: 22px;
+    color: $black;
   }
 }

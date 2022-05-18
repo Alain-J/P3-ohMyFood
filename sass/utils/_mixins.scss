@@ -3,6 +3,15 @@
     flex-direction: column;
 }
 
+@mixin heart {
+    :hover{
+        background: -webkit-linear-gradient($primary-color,$secondary-color);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900;
+    }
+}
 
 
 @mixin rounded-btn {
