@@ -51,11 +51,12 @@
   margin-top: -3rem;
   position: relative;
   border-radius: 30px 30px 0px 0px;
+
   &__grostitre {
     display: flex;
     align-items: center;
     gap: 4rem;
-    font-size: 24.5px;
+    font-size: 27.5px;
   }
   &__categories {
     margin-bottom: 0;
@@ -65,6 +66,7 @@
   &__plat {
     margin-left: 10px;
     margin-bottom: -4px;
+    flex: 1;
   }
   &__titre {
     margin-bottom: -15px;
@@ -80,6 +82,7 @@
     background: $white;
     margin-left: -6px;
     margin-right: -33px;
+    animation: appear 1s forwards;
   }
   &__prix {
     margin-right: 10px;
@@ -106,4 +109,43 @@
     left: 25%;
     margin: 30px 0px 30px 0px;
   }
+  &__coeur {
+    display: flex;
+    font-size: 25px;
+    align-items: flex-end;
+    justify-content: end;
+    position: relative;
+    bottom: 61px;
+    @include heart;
+  }
+  &__article {
+    width: 96%;
+  }
+  &__check {
+    background: #99e2d0;
+    cursor: pointer;
+    height: 4rem;
+    width: 13rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    margin-right: -13rem;
+    &:hover {
+      width: 19rem;
+    }
+  }
+}
+
+
+
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    }
 }

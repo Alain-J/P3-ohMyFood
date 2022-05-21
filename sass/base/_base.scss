@@ -36,6 +36,8 @@ h1.sectioncarte__grostitre{
   }
 }
 .loadingcontainer{
+  display: flex;
+  align-items: center;
   position: fixed;
   height: 100%;
   top: 0;
@@ -43,8 +45,8 @@ h1.sectioncarte__grostitre{
   right: 0;
   left: 0;
   z-index: 100;
-  background-color: $secondary-color;
-  animation: loading-visibility 3s linear both;
+  background-color: $white;
+  animation: loading-visibility 3s linear both;  
 }
 
 @keyframes loading-visibility{
@@ -53,7 +55,7 @@ h1.sectioncarte__grostitre{
     visibility: visible ;
   }
   to{
-    opacity: 0;
+    opacity: 1;
     visibility: hidden ;
   }
 }
