@@ -29,6 +29,9 @@
     width: 100%;
     object-fit: cover;
     height: 245px;
+    @media(min-width: 368px) {
+      min-height: 30rem;
+    }
   }
   &__logo {
     margin-bottom: 10px;

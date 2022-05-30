@@ -15,6 +15,11 @@ h1.sectioncarte__grostitre{
   flex-direction: column;
   background: $black;
   color: $white;
+  @media(min-width: 768px) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
   &__titre {
     margin-left: 40px;
     font-style: italic;
