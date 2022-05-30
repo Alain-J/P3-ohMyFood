@@ -12,6 +12,16 @@
     <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="./public/tablett.css"
+      media="screen AND (min-width: 768px)"
+    />
+    <link
+    rel="stylesheet"
+    href="./public/css/desktop.css"
+    media="screen AND (min-width: 1024px)"
+  />
   </head>
 
   <body>
@@ -24,7 +34,9 @@
           <img src="./public/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
         </div>
         <div class="header__localization">
-          <p class="header__texte"><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
+          <p class="header__texte">
+            <i class="fas fa-map-marker-alt"></i> Paris, Belleville
+          </p>
         </div>
       </header>
     </div>
@@ -38,12 +50,13 @@
       </div>
 
       <div class="fonctionnement">
-        <h2>Fonctionnement</h2>
+        <h2 class="fonction">Fonctionnement</h2>
         <!--<ol class="liste">
             <li><button><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</button></li>
             <li><button><i class="fa-solid fa-list"></i>Composez votre menu</button></li>
             <li><button><i class="fas fa-store"></i>Dégustez au restaurant</button></li>
           </ol>-->
+          <div class="fonction">
         <div class="nav">
           <div class="nav__item">
             <a href="javascript:;">
@@ -92,9 +105,11 @@
           </div>
         </div>
       </div>
+      </div>
 
       <section class="restaurant">
         <h2>Restaurants</h2>
+        <div class="resto">
         <article class="restaurant__carte">
           <figure class="restaurant__figure">
             <a href="carte1.html">
@@ -181,6 +196,7 @@
           </figure>
         </article>
       </section>
+    </div>
 
       <footer class="footer">
         <h3 class="footer__titre">ohmyfood</h3>

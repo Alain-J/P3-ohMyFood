@@ -45,7 +45,6 @@
 }
 
 .sectioncarte {
-  font-size: 14px;
   background: $whitesmoke;
   padding: 18px;
   margin-top: -3rem;
@@ -67,12 +66,17 @@
     margin-left: 10px;
     margin-bottom: -4px;
     flex: 1;
+    @include overflow;
   }
   &__titre {
     margin-bottom: -15px;
     margin-top: 9px;
     font-size: 17px;
     font-weight: bold;
+    @include overflow;
+  }
+  &__text{
+    @include overflow;
   }
   &__menu {
     display: flex;
@@ -82,7 +86,19 @@
     background: $white;
     margin-left: -6px;
     margin-right: -33px;
-    animation: appear 1s forwards;
+    animation: appear 3s forwards;
+    white-space: nowrap;
+    box-shadow: 2px 10px 10px -6px $blackgray;
+    @include overflow;
+    &:hover > .sectioncarte__check {
+      visibility: visible;
+      min-width: 20%;
+      transform-origin: right;
+      animation: slider 500ms linear;
+      .sectioncarte__icone{
+        animation: rotate 500ms ease-in-out both;
+      }
+    }
   }
   &__prix {
     margin-right: 10px;
@@ -122,21 +138,46 @@
     width: 96%;
   }
   &__check {
-    background: #99e2d0;
+    background: $tertiary-color;
     cursor: pointer;
-    height: 4rem;
-    width: 13rem;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-    margin-right: -13rem;
-    &:hover {
-      width: 19rem;
-    }
+    visibility: hidden;
+    border-radius: 0 10px 10px 0;
+  }
+  &__icone{
+    height: 61px;
+    display: flex;
+    align-items: center;
+  }
+  
+}
+
+@keyframes slider {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
+
 
 
 
@@ -147,5 +188,5 @@
   }
   100% {
     transform: scale(1);
-    }
+  }
 }
