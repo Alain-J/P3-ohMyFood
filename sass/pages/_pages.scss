@@ -15,6 +15,7 @@ h2 {
   gap: 1rem;
   &__titre{
     margin: auto;
+    margin-top: 19px;
   }
   &__decouvrez {
     margin-top: -4px;
@@ -30,8 +31,7 @@ h2 {
 
 @media (min-width: 768px) {
   .fonction {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @include display-grid;
   }
   @media (min-width: 1024px) {
     .fonction {

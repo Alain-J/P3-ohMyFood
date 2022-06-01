@@ -17,7 +17,7 @@
 @mixin rounded-btn {
     border-radius: 30px 30px 30px 30px;
     height: 51px;
-    width: 53%;
+    width: 56%;
     border: none;
     font-size: 14px;
     color: $white;
@@ -29,3 +29,8 @@
     text-overflow: ellipsis;
     overflow: hidden;
     }
+
+   @mixin display-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }

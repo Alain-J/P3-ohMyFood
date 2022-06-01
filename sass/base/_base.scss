@@ -6,7 +6,7 @@ body {
   font-family:"Roboto", sans-serif;
 }
 
-h1.sectioncarte__grostitre{
+h1.divcarte__grostitre{
   font-family: Shrikhand;
 }
 
@@ -22,7 +22,8 @@ h1.sectioncarte__grostitre{
   }
   &__titre {
     margin-left: 40px;
-    font-style: italic;
+    font-weight: 500;
+    font-family: Shrikhand;
   }
   &__bas {
     display: flex;
@@ -38,6 +39,10 @@ h1.sectioncarte__grostitre{
       display: flex;
       gap: 6px;
     }
+  }
+  &__mail{
+    color: $white;
+    text-decoration: none;
   }
 }
 .loadingcontainer{
