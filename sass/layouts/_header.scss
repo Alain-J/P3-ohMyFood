@@ -35,14 +35,15 @@
   }
   &__logo {
     margin-bottom: 10px;
+    margin-top: 20px;
   }
   &__lienfleche {
     text-decoration: none;
     display: flex;
-    position: relative;
+    position: absolute;
+    font-size: 25px;
+    color: #353535;
+    top: 18px;
     left: 2rem;
-    top: 1.6rem;
-    font-size: 22px;
-    color: $black;
   }
 }
