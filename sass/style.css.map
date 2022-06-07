@@ -6,7 +6,6 @@
         "utils/_variables.scss",
         "utils/_mixins.scss",
         "base/_base.scss",
-        "layouts/_container.scss",
         "layouts/_header.scss",
         "pages/_pages.scss",
         "layouts/_restaurant.scss"
