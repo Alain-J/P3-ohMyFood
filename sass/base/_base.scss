@@ -10,6 +10,15 @@ h1.divcarte__grostitre{
   font-family: Shrikhand;
 }
 
+h2 {
+  margin-left: 26px;
+  font-size: 26px;
+  @media(min-width: 768px) {
+    text-align: center;
+  }
+}
+
+
 .footer {
   display: flex;
   flex-direction: column;
